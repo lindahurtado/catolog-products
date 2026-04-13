@@ -6,3 +6,6 @@ CREATE TABLE IF NOT EXISTS products (
     url VARCHAR(255),
     state BOOLEAN DEFAULT true
 );
+
+INSERT INTO products (name, description, price, url, state) VALUES
+('Curso React', 'Aprende desde cero', 199000, 'http://www.examplereact.com', true);
