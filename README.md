@@ -36,3 +36,9 @@ Para correr el proyecto localmente, se debe tener intalado en la maquina el Dock
 
 Autor
 - Linda Yire Hurtado Forero - Ingeniera de sistemas
+
+Respuesta: 
+¿Qué cambios harías si este servicio tuviera que soportar 1 millón de usuarios diarios?
+
+Respuesta: 
+Para realizar un sistema que pueda soportar a 1 millón de usuarios se debe abarcar 3 frentes: infraestructura, base de datos y rendimiento; pasar de una arquitectura monolítica a una distribuida donde en la infraestructura se debe implementar un balanceador de carga para repatir el tráfico entre múltiples instancias del backend, en temas de base de datos se pues optimizar la conexión a la base de datos por medio de un gestor de conexiones, dado que aunque PsotgreSQL es robusta esta puede colapsar el servidos con esa cantidad de usuarios y por último con base al rendimiento se puede implementar el cache de manera que no todas las peticiones toquen el PostgreSQL.
